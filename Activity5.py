@@ -1,0 +1,11 @@
+import tkinter as tk
+window=tk.Tk()
+window.title("Pack Layout")
+window.geometry("400x300")
+label=tk.Label(window,text="Pack Layout Example")
+label.pack(side="top")
+button1=tk.Button(window,text="Left Button")
+button1.pack(side="left")
+button2=tk.Button(window,text="Right Button")
+button2.pack(side="right")
+window.mainloop()

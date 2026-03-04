@@ -1,0 +1,16 @@
+import tkinter as tk
+window=tk.Tk()
+def button_click():
+    print("Button clicked!")
+    label.config(bg="pink")
+    button.config(bg="purple", fg="pink")
+    print("You entered:", entry.get())
+window.title("GUI")
+window.geometry("400x400")
+label=tk.Label(window, text="Hello, Tkinter!", font=("Ariel", 16, "bold") , bg= "lavender" , fg="purple")
+label.pack()
+entry=tk.Entry(window,width=50)
+entry.pack()
+button=tk.Button(window, text="Enter", command=button_click, bg="pink", fg="blue")
+button.pack()
+window.mainloop()

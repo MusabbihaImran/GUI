@@ -1,0 +1,11 @@
+import tkinter as tk
+window=tk.Tk()
+window.title("My First GUI APP")
+window.geometry("400x200")
+label=tk.Label(window, text="Hello, Tkinter!", font=("Ariel", 16, "bold") , bg= "lavender" , fg="purple")
+label.pack()
+label=tk.Label(window, text="First GUI!", font=("Times New Roman" , 14 ,"italic"), bg="light blue" , fg="blue")
+label.pack()
+label=tk.Label(window, text="This is the Window!", font=("Calibri Body" , 12, "underline"), bg="cyan", fg="sea green")
+label.pack()
+window.mainloop()
